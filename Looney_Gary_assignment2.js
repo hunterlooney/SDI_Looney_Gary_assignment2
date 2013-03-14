@@ -19,7 +19,8 @@
 
 
 
-// A lot of Encapsulation /*
+// A lot of Encapsulation 
+/*
 var deckNames = [ "Berth deck", "Bridge", "Gun Deck", "Quarterdeck" ],
 	minutesPerDeck = [ 30, 15, 60, 60 ];
 var swabOneDeck = function(deckName, minutesThisDeck) {
@@ -39,14 +40,16 @@ var swabAllDecks = function (deckNames, minutesPerDeck) {
 };
 swabAllDecks(deckNames, minutesPerDeck);
 */
-//Shorthand /*
+//Shorthand 
+/*
 
 var c = function (message) {console.log(message)};
 
 c ("Hi");
 
 */
-//Functions /*
+//Functions 
+/*
 var pi = 3.14159;
 var radius = 5;
 
@@ -62,7 +65,8 @@ var reportArea = function (name, area, message) {
 var area = getArea(10);
 reportArea ("Ceiling cat", area, "is all seeing");
 */
-//ReFactoring Functions /*var deckNames = [ "Berth deck", "Bridge", "Gun Deck", "Quarterdeck" ],
+//ReFactoring Functions 
+/*var deckNames = [ "Berth deck", "Bridge", "Gun Deck", "Quarterdeck" ],
 	minutesPerDeck = [ 30, 15, 60, 60 ];
 
 var swabOneDeck = function() {
@@ -82,7 +86,8 @@ for (var deckNumber = 0; deckNumber < deckNames.length; deckNumber++) {
 			swabOneDeck();
 };
 */
-//Arrays /*
+//Arrays 
+/*
 var captains = [
 	"Hook", 
 	"Morgan", 
@@ -107,7 +112,8 @@ for (var i=0, j=captains.length; i < j; i++) {
 };
 //var example = [" ". [], {}, function (){}, true, false, 0, 50, undefined];
 */
-//loops /*
+//loops 
+/*
 //while loop
 var bOoj = 99 // counter
 
