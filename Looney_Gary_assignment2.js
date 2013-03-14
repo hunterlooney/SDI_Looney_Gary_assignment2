@@ -33,7 +33,32 @@
 
 
 
+//Arrays
+/*
+var captains = [
+	"Hook", 
+	"Morgan", 
+	"Sparrow"
+];
+captains.push = ("Barbosa"); //add
+captains.unshift = ("Blackbeard"); //add
+//captains.pop(); //subtract
+//captains.shift(); //subtract
 
+//console.log(captains.length);
+
+var adjectives = [
+		"missing a hand",
+		"bad",
+		"insane"
+];
+
+for (var i=0, j=captains.length; i < j; i++) {
+	console.log( "Captain " + captains[i] + " is " + adjectives[i] );
+
+};
+//var example = [" ". [], {}, function (){}, true, false, 0, 50, undefined];
+*/
 
 
 
