@@ -3,22 +3,51 @@
 // Year: 13 Month: 03
 
 
+//Return Values
+/*
+var buyMilk = function(givenCash) {
+	var pricePerGallon = 3,
+		wholeGallons;
+	
+	if (givenCash < pricePerGallon) {
+			console.log("That's not enough money!");
+			wholeGallons = 0;
+	}
+	else {
+	wholeGallons = Math.floor(givenCash / pricePerGallon);
+	}
+	return wholeGallons;
+};
+
+var gotGallons = buyMilk(1);
+console.log("Thanks for buying " + gotGallons + " gallons of milk!");
+
+//Separate
+var getGreetingByName = function(name){
+		var currentHour = (new Date()).getHours(),
+		timeOfDay, greeting;
+		if (currentHour < 12) { timeOfDay = "morning"; }
+		else if (currentHour < 17) { timeOfDay = "afternoon"; }
+		else { timeOfDay = "evening";}
+		greeting = "Good " + timeOfDay + ", " + name + "!"
+		return greeting;
+};
+
+var fullGreeting = getGreetingByName("Hunter");
+console.log(fullGreeting);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//Separate
+var greetByName = function(name){
+		var currentHour = (new Date()).getHours(),
+		timeOfDay;
+		if (currentHour < 12) { timeOfDay = "morning"; }
+		else if (currentHour < 17) { timeOfDay = "afternoon"; }
+		else { timeOfDay = "evening";}
+		console.log( "Good " + timeOfDay + ", " + name + "!");
+};
+greetByName("Hunter");
+*/
 // A lot of Encapsulation 
 /*
 var deckNames = [ "Berth deck", "Bridge", "Gun Deck", "Quarterdeck" ],
