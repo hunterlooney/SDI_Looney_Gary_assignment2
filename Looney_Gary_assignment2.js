@@ -3,6 +3,50 @@
 // Year: 13 Month: 03
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Boolean Logic
+/*
+//p: The butler committed a crime.
+//q: A crime took place in the foyer.
+//r: There is evidence who committed the crime.
+//You were told to evaluate expressions when given p as True and q and r as False. The setup for that in JavaScript would be:
+var p = true, q = false, r = false;
+console.log("The expression is " + ((p && q) || r));
+*/
+//Variable Scope
+/*
+var feedPirate = function (pirateName, food) {
+		console.log("Gave some " +food + " to the pirate " + pirateName + "!");
+		var feedMonkey = function(monkeyName, food) {
+				console.log("Gave some " +food + " to " + monkeyName + "!");
+		};
+		feedMonkey("Jack", "biscuits");
+		feedMonkey("Jill", "poop");		
+		console.log(pirateName + " ate some " + food + "!");
+};
+feedPirate("Morgan", "oranges");
+*/
 //Return Values
 /*
 var buyMilk = function(givenCash) {
