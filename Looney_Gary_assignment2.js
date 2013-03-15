@@ -3,28 +3,133 @@
 // Year: 13 Month: 03
 
 
+//Stacy and Bob are stuck in a room
+var characters = ["Stacy", "Bob"];
+var adjectives = ["awake but dizzy.", "knocked out!"];	
+for (var i=0, j=characters.length; i < j; i++) {
+	console.log( characters[i] + " is " + adjectives[i] );
+};
+var wakeUpBob = function (awakeName, outName, treatment) {
+		console.log(awakeName + " administered " + outName + " " + treatment + ".");
+		};
+wakeUpBob ("Stacy", "Bob", "smelling salts");		
+var smellSaltTrys = 1
+while (smellSaltTrys < 3) {
+			console.log("Stacy administered Bob smelling salts.");
+			smellSaltTrys++
+			console.log("Stacy has tried smelling salts " + smellSaltTrys + " times.")
+			smellSaltTrys++;
+};
+console.log("Stacy says, \"This isn't working, I better look around.\"") 
+
+		
+var buyMilk = function(givenCash) {
+	var pricePerGallon = 3,
+		wholeGallons;
+	
+	if (givenCash < pricePerGallon) {
+			console.log("That's not enough money!");
+			wholeGallons = 0;
+	}
+	else {
+	wholeGallons = Math.floor(givenCash / pricePerGallon);
+	}
+	return wholeGallons;
+};
+
+var gotGallons = buyMilk(1);
+console.log("Stacy has found " + exit + " ways out!");
+
+
+//p: Stacy found a window that is high up.
+//q: Bob is awake.
+//r: Stacy found 2 lockpicks.
+var p = true, q = true, r = false;
+console.log("Stacy and Bob were able to escape? " + ((p && q) || r));
 
 
 
+//Week 1 Project
+/*
+//My Variables
+	//String Variables
+var only = "How many people are here? ",
+	howManyPicks = "How many lock picks do I have? ",
+	doorLocked = "Is the door locked? ",
+	unlock = "I was able to use the lock picks to escape.",
+	question = "Why was I in that room? ",
+	a = "stranger",
+	//Strings With Escapes
+	whatName = ", what is your name?\"",
+	onlyHere = "\"I'm the only one here.\"",
+	hello = "\"Hello ",
+	anotherWay = "\"I need to find another way out of this room.\""
+	strangerResponse = "Stranger replies, \"My name is Bob. What are we doing here?\"", 
+	//Number Variables
+	lockPicks = 2,
+	peopleAnswer = 2, 
+	//Boolean
+	lock = true
+;
 
+//Output Each Variable
+console.log(doorLocked + lock)
+console.log(howManyPicks + lockPicks)
+console.log(unlock)
+console.log(anotherWay)
+console.log(only + peopleAnswer)
+console.log(onlyHere)
+console.log(question)
+console.log(hello + a + whatName)
+console.log(strangerResponse)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//My Conditionals
+if (lock === true) {
+	//What happens if lock === true:
+	console.log(doorLocked)
+	console.log(lock)
+	console.log(howManyPicks + lockPicks)
+	if (lockPicks >= 2) {
+			//What happens if you have the needed amount of lock picks
+			console.log(unlock)
+	} else {
+			//What happens if you do not have the needed amount of lock picks
+			console.log(anotherWay)
+	}
+	
+} else {
+	//What happens if lock === false
+	console.log(doorLocked)
+	console.log(lock)
+	console.log(only + peopleAnswer)
+	//String Conditional
+	if (peopleAnswer <= 1) {
+		//What happens if string conditional is true
+		console.log(onlyHere)
+		console.log(question)
+	} else {
+		//What happens if string conditional is false
+		console.log(hello + a + whatName)
+		console.log(strangerResponse)
+	}
+}
+*/
+//Sample Story in Codelish (Code+English)
+/*
+Our new crewmember var crewName = "Wesley"; had only been at sea for var daysSailing = 8; 
+days, but he was already rethinking his decision to become a pirate. All he had done so 
+far was swab the decks = [ "Bridge", "Gun deck", "Main deck", "Quarterdeck" ];, which didn't 
+feel very Pirate-y. It felt like his days were just the same thing over and over again:
+Is it time to var swabTheDecks = function(decks){...};? It looks like I have 
+var decksRemaining = decks.length; to go. The First Mate says I have to keep swabbing while 
+(decksRemaining > 0), so I guess I'd better get to it.
+And just like each day was the same, each deck was the same, so that for (var deckNumber = 0; 
+deckNumber < decks.length; deckNumber++) every deck that he was told to do, he just swabbed and 
+swabbed and swabbed. No matter who he complainTo = function(person,rant){...};, the result was 
+always the same: return "Get back to work, " + crewName;.
+In time, he kept his mind occupied by imagining what would happen if (ninjas.decideToAttack()) 
+in the middle of the night.
+*/
 //Boolean Logic
 /*
 //p: The butler committed a crime.
@@ -215,4 +320,5 @@ for (var i = 0; i < 5; i++) {
 		};
 		
 };
+
 */
