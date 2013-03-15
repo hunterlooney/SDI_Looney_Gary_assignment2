@@ -23,32 +23,48 @@ while (smellSaltTrys < 3) {
 console.log("Stacy says, \"This isn't working, I better look around.\"") 
 
 		
-var buyMilk = function(givenCash) {
-	var pricePerGallon = 3,
-		wholeGallons;
+var findExit = function(lockPicksAlreadyInPocket) {
+	var lockPicksNeededToEscape = 2,
+		wayOut;
 	
-	if (givenCash < pricePerGallon) {
-			console.log("That's not enough money!");
-			wholeGallons = 0;
+	if (lockPicksAlreadyInPocket < lockPicksNeededToEscape) {
+			console.log("Stacy says, \"I can't find enough lockpicks to open the door!\"");
+			console.log("Stacy says, \"I bet with Bob's help I could make it up to that window up there!\"");
+			wayOut = 1;
 	}
 	else {
-	wholeGallons = Math.floor(givenCash / pricePerGallon);
+	wayOut = Math.floor(lockPicksAlreadyInPocket / lockPicksNeededToEscape);
+	console.log("Stacy says, \"I'm glad I have these lockpicks!\"");
+	console.log("Stacy says, \"Also, I bet with Bob's help I could make it up to that window up there!\"");
+	wayOut++
 	}
-	return wholeGallons;
+	if (wayOut > 2) {
+		wayOut = 2
+	}
+	return wayOut;
 };
 
-var gotGallons = buyMilk(1);
+var exit = findExit(2);
 console.log("Stacy has found " + exit + " ways out!");
 
+while (smellSaltTrys < 6) {
+			console.log("Stacy says, \"I better try to wake Bob up again.\"");
+			console.log("Stacy administered Bob smelling salts.");
+			smellSaltTrys++
+			console.log("Stacy has tried smelling salts " + smellSaltTrys + " times.");
+};
+if (smellSaltTrys = 6) {
+		console.log("Bob woke up.") 
+		}
 
 //p: Stacy found a window that is high up.
 //q: Bob is awake.
 //r: Stacy found 2 lockpicks.
-var p = true, q = true, r = false;
+var p = true, q = true, r = true;
 console.log("Stacy and Bob were able to escape? " + ((p && q) || r));
 
 
-
+//Notes
 //Week 1 Project
 /*
 //My Variables
